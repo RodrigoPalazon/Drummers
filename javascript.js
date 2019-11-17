@@ -12,6 +12,11 @@ function onLoad() {
     // ex2
     // fix styling with flex
 
+    // ex3(optional)
+    // add another paragraph or span inside existing paragraph with lorem ipsum
+
+    // ex4(adv)
+    // for every thing the drummer loves create a new span to display it.
 
 
 function addDrummers() {
@@ -43,6 +48,7 @@ const drummers = [
     id: 1,
     firstName: "Vinnie",
     lastName: "Colaiuta",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/drummerworld2/vinniecolaiuta840.jpg",
     link: "https://www.drummerworld.com/drummers/Vinnie_Colaiuta.html"
   },
@@ -50,6 +56,7 @@ const drummers = [
     id: 2,
     firstName: "Gary",
     lastName: 'Novak',
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/drummerworld/garynovak550loertscher.jpg",
     link: "https://www.drummerworld.com/drummers/Gary_Novak.html"
   },
@@ -57,6 +64,7 @@ const drummers = [
     id: 3,
     firstName: "Justin",
     lastName: "Faulkner",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxR6LdwQKkD_sBExZrGajMVlkTNxdxG2o9Cu0HzasuyNgCF_AK&s",
     link: "https://www.youtube.com/watch?v=7BVePPwlHZs"
   },
@@ -64,6 +72,7 @@ const drummers = [
     id: 4,
     firstName: "Dennis",
     lastName: "Chambers",
+    loveList: ['Mary', 'qaweqweqwe', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/pics/drumpics25/dennischambers55054.jpg",
     link: "https://www.drummerworld.com/drummers/Dennis_Chambers.html"
   },
@@ -71,6 +80,7 @@ const drummers = [
     id: 5,
     firstName: "Elvin",
     lastName: "Jones",
+    loveList: ['Mary', 'rrll', 'tqwtqwtq tshirt'],
     imageUrl: "https://www.drummerworld.com/pics/drumpics34/elvinjonescreasy.jpg",
     link: "https://www.drummerworld.com/drummers/Elvin_Jones.html"
   },
@@ -78,6 +88,7 @@ const drummers = [
     id: 6,
     firstName: "Jojo",
     lastName: "Mayer",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/drummerworld/jojomayerfoottechnique.jpg",
     link: "https://www.drummerworld.com/drummers/JOJO_Mayer.html"
   },
@@ -85,6 +96,7 @@ const drummers = [
     id: 7,
     firstName: "Will",
     lastName: "Will Kennedy",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/pics/drumpics10/Will-Kennedy.jpg",
     link: "https://www.drummerworld.com/drummers/William_Kennedy.html"
   },
@@ -92,6 +104,7 @@ const drummers = [
     id: 8,
     firstName: "Mark",
     lastName: "Guiliana",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/drummerworld/markguilianahudson550.jpg",
     link: "https://www.drummerworld.com/drummers/Mark_Guiliana.html"
   },
@@ -100,6 +113,7 @@ const drummers = [
     id: 9,
     firstName: "Chris",
     lastName: "Coleman",
+    loveList: ['Mary', 'rrll', 'white tshirt'],
     imageUrl: "https://www.drummerworld.com/pics/drumpics33/chriscoleman550.jpg",
     link: "https://www.drummerworld.com/drummers/Chris_Coleman.html"
   }
