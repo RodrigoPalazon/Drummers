@@ -4,32 +4,39 @@ function onLoad() {
   document.getElementsByClassName("parag")[0].innerHTML = "<b>" + drummers[0].firstName + " " + drummers[0].lastName + "</b>";
 }
 
+    // ex1
+    // ex1.1 create section
+    // ex1.2 set attribute class to content
+    // ex1.3 put all articles inside section
+
+    // ex2
+    // fix styling with flex
+
+
+
 function addDrummers() {
-  for (const drummer of drummers) {
-    var newArticle = document.createElement("article");
+  for (let drummer of drummers) {
+    const newArticle = document.createElement("article");
     newArticle.setAttribute("class", "article-class");
 
-    var newP = document.createElement("p");
+    const newP = document.createElement("p");
     newP.setAttribute("class", "parag");
+    newP.innerText = drummer.firstName + drummer.lastName ; // Vinnie Colliaute
 
     document.body.appendChild(newArticle);
-    document.body.appendChild(newP);
+    newArticle.appendChild(newP);
 
-    // :optional:
-    // create section
-    // set attribute class to content
-    // put article and paragraph inside section
+    const newLinkAnchor = document.createElement("a");
+    newLinkAnchor.setAttribute("href", drummer.link);
+    newArticle.append(newLinkAnchor);
 
-    // create link (anchor/a)
-    // set href attribute
-    // insert link element inside the article element
-
-    // create img
-    // set src attribute
-    // set alt attribute 
-    // insert image element inside the anchor element
+    const newImg = document.createElement("img");
+    newImg.setAttribute("src", drummer.imageUrl);
+    newImg.setAttribute("alt", " ");
+    newLinkAnchor.appendChild(newImg);
   }
 }
+
 
 const drummers = [
   {
