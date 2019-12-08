@@ -21,6 +21,7 @@ function onLoad() {
 
 function addDrummers() {
   for (let drummer of drummers) {
+       
     const newArticle = document.createElement("article");
     newArticle.setAttribute("class", "article-class");
 
@@ -39,6 +40,11 @@ function addDrummers() {
     newImg.setAttribute("src", drummer.imageUrl);
     newImg.setAttribute("alt", " ");
     newLinkAnchor.appendChild(newImg);
+
+    const newSection = document.createElement("section");
+    newSection.setAttribute("class", "section-class");
+    document.newSection.appendChild(newArticle);  
+
   }
 }
 
