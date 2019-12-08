@@ -1,7 +1,7 @@
 function onLoad() {
   addDrummers();
-  document.getElementsByClassName("article-class")[0].innerHTML = "<a href=" + drummers[0].link + ">" + "<img src=" + drummers[0].imageUrl + " alt=" + drummers[0].lastName + "/>" + "</a>";
-  document.getElementsByClassName("parag")[0].innerHTML = "<b>" + drummers[0].firstName + " " + drummers[0].lastName + "</b>";
+  // document.getElementsByClassName("article-class")[0].innerHTML = "<a href=" + drummers[0].link + ">" + "<img src=" + drummers[0].imageUrl + " alt=" + drummers[0].lastName + "/>" + "</a>";
+  // document.getElementsByClassName("parag")[0].innerHTML = "<b>" + drummers[0].firstName + " " + drummers[0].lastName + "</b>";
 }
 
     // ex1
@@ -43,8 +43,10 @@ function addDrummers() {
 
     const newSection = document.createElement("section");
     newSection.setAttribute("class", "section-class");
-    document.newSection.appendChild(newArticle);  
 
+    newSection.appendChild(newArticle);  
+
+    document.body.appendChild(newSection);
   }
 }
 
